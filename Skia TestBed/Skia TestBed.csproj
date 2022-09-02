@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Skia_TestBed</RootNamespace>
+    <Nullable>enable</Nullable>
+	<UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="SkiaSharp" Version="2.88.1-preview.3426" />
+    <PackageReference Include="SkiaSharp.Views" Version="2.88.1-preview.3223" />
+	<PackageReference Include="SkiaSharp.Views.WindowsForms" Version="2.88.1-preview.3223" />
+	<PackageReference Include="Topten.RichTextKit" Version="0.4.151" />
+  </ItemGroup>
+
+</Project>
