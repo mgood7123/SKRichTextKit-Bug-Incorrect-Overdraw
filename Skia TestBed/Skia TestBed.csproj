@@ -9,9 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-	<PackageReference Include="SkiaSharp" Version="2.88.1-preview.3426" />
-    <PackageReference Include="SkiaSharp.Views" Version="2.88.1-preview.3223" />
-	<PackageReference Include="SkiaSharp.Views.WindowsForms" Version="2.88.1-preview.3223" />
+	<PackageReference Include="SkiaSharp" Version="2.88.1" />
+	<PackageReference Include="SkiaSharp.Views.WindowsForms" Version="2.88.1" />
 	<PackageReference Include="Topten.RichTextKit" Version="0.4.151" />
   </ItemGroup>
 

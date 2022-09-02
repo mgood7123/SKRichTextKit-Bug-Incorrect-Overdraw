@@ -62,7 +62,7 @@ namespace Skia_TestBed
 
                         using SKPaint colorPaint = new();
 
-                        void drawText(SKCanvas canvas, int n, int x, int y)
+                        void drawText_(SKCanvas canvas, int n, int x, int y)
                         {
                             for (int i = 0; i < n; i++)
                             {
@@ -80,7 +80,7 @@ namespace Skia_TestBed
                             }
                         }
 
-                        void drawText_(SKCanvas canvas, int n, int x, int y)
+                        void drawText(SKCanvas canvas, int n, int x, int y)
                         {
                             SKTypeface t = SKTypeface.FromFamilyName("Arial");
                             SKFont f = t.ToFont();
@@ -93,7 +93,10 @@ namespace Skia_TestBed
                             {
                                 string text = "drawn " + n + " time";
                                 if (i != 0) text += "s";
-                                canvas.DrawText(text, x, y, paint);
+                                canvas.Save();
+                                canvas.Translate(x, y);
+                                canvas.DrawText(text, 0, 0, paint);
+                                canvas.Restore();
                             }
                         }
 
